@@ -11,7 +11,7 @@
 $ bash bin/RunFaultModSlab.sh
 ```
 
-- Before executing script, edit input parameters controlling fault model and slab1.0 models to be considered.
+- Before executing script, edit input-parameters controlling fault model and slab1.0 models to be considered.
 
 ## Dependencies
 
