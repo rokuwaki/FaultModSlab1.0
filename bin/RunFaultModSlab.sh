@@ -10,9 +10,9 @@ wget https://earthquake.usgs.gov/data/slab/models/$Region"_top.in"              
 lat0=46.592
 lon0=153.266
 
-depthdata='"data/kur_slab1.0_clip.xyz"'
-strikedata='"data/kur_slab1.0_strclip.xyz"'
-dipdata='"data/kur_slab1.0_dipclip.xyz"'
+depthdata='"data/'$Region'_slab1.0_clip.xyz"'
+strikedata='"data/'$Region'_slab1.0_strclip.xyz"'
+dipdata='"data/'$Region'_slab1.0_dipclip.xyz"'
 
 mkdir -p work
 echo "46.592  153.266  0"               > work/input.dat
