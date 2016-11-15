@@ -5,6 +5,8 @@
 - Rake angle for each source knot is assumed to be a pure thrust against plate motion derived from MORVEL model ([DeMets et al., 2010, GJI](http://doi.org/10.1111/j.1365-246X.2009.04491.x)).
 - The codes are achieved with significant contribution from Amato Kasahara.
 
+![](https://github.com/rokuwaki/FaultModSlab1.0/raw/master/work/FaultMod2006Kuril.png)
+
 ## Usage
 
 ```bash
