@@ -29,11 +29,11 @@ program FaultModSlab
   open(16, file = 'work/epicenter.dat', status = 'replace', action = 'write')
 
   call load_slab1_file(trim(depth_xyz), lons, lats, depths)
-  write(6, *) 'Loaded slab1.0 depth data'
+  write(6, '("Loaded slab1.0 depth data")') 
   call load_slab1_file(trim(strike_xyz), lons, lats, strikes)
-  write(6, *) 'Loaded slab1.0 strike data'
+  write(6, '("Loaded slab1.0 strike data")') 
   call load_slab1_file(trim(dip_xyz), lons, lats, dips)
-  write(6, *) 'Loaded slab1.0 dip data'
+  write(6, '("Loaded slab1.0 dip data")') 
 
   do k = 1, nk !! along-dip
      num_dip =  k - k0
@@ -64,6 +64,7 @@ program FaultModSlab
         end if
      end do
   end do
+  write(6, '("Done!")')
 contains
 
   function is_nan(x) result(answer)
