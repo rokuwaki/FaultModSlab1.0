@@ -114,6 +114,11 @@ contains
              write(ERROR_UNIT, *) 'MUST NOT HAPPEN: i_line > n_line'
              stop 1
           end if
+          if (lon > 180) then
+             lon = lon - 360.0
+          else
+             lon = lon
+          end if
           lons(i_line) = lon
           lats(i_line) = lat
           values(i_line) = value
